@@ -5,7 +5,6 @@ using System.Text;
 
 namespace Minesweeper
 {
-
     /// <summary>
     /// Size - one side of a square board
     /// Diff - difficulty level from 1 to 100
@@ -32,10 +31,8 @@ namespace Minesweeper
             }
         }
 
-
         public Board(int size, int diff)
         {
-
             Difficulty = diff; //1 - 100 percentage of armed cells
             Size = size;
             _grid = new Cell[this.Size][];
@@ -54,7 +51,7 @@ namespace Minesweeper
                 return true;
             }
 
-            
+
             if (_grid[row][col].IsArmed != true)
             {
                 MarkEmptyFields(row, col);
@@ -150,14 +147,10 @@ namespace Minesweeper
                     plantedBombs--;
                 }
             }
-
-
         }
 
         private void CellInitialization()
         {
-
-
             for (int i = 0; i < this.Size; i++)
             {
 
@@ -168,7 +161,6 @@ namespace Minesweeper
                     this._grid[i][j] = new Cell();
                 }
             }
-
         }
     }
 }

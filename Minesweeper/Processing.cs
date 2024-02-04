@@ -7,7 +7,6 @@ namespace Minesweeper
 {
     static class Processing
     {
-
         public static (int, int) GetUserInput()
         {
             Console.WriteLine("Enter a row and column separated by a space.");
@@ -123,10 +122,8 @@ namespace Minesweeper
                     }
                     Console.Write(" | ");
                 }
-
                 Console.WriteLine();
             }
         }
-
     }
 }
